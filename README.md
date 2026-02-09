@@ -33,23 +33,22 @@ This project demonstrates modern **agent-style orchestration**, combining vector
 
 ## 🧠 Architecture Overview
 
-User Query
-↓
-Chat UI (React)
-↓
-API Gateway (Node.js / Express)
-↓
-Agent Router (MCP)
-├── Vector Search (Pinecone)
-├── Web Search (SerpAPI)
-└── Context Assembly
-↓
-GPT-5 Generation
-↓
-Grounded Answer Response
+User Query  
+↓  
+Chat UI (React)  
+↓  
+API Gateway (Node.js / Express)  
+↓  
+Agent Router (MCP)  
+├── Vector Search (Pinecone)  
+├── Web Search (SerpAPI)  
+└── Context Assembly  
+↓  
+GPT-5 Generation  
+↓  
+Grounded Answer Response  
 
-
-The system retrieves only the most relevant document context before generation, dramatically improving accuracy and reducing hallucinations compared to vanilla LLM chatbots.
+The system retrieves only the most relevant document context before generation, dramatically improving accuracy and reducing hallucinations compared to traditional LLM chatbots.
 
 ---
 
