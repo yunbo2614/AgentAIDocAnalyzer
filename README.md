@@ -83,3 +83,50 @@ The system retrieves only the most relevant document context before generation, 
 ```bash
 git clone https://github.com/yunbo2614/AgentAIDocAnalyzer.git
 cd AgentAIDocAnalyzer
+```
+
+## ⚙️ Environment Configuration & Running the Application
+
+Create a `.env` file in the backend directory and configure the following environment variables:
+
+    # Server
+    PORT=8080
+    ENV=development
+
+    # Authentication
+    JWT_SECRET=your_jwt_secret
+    JWT_REFRESH_SECRET=your_refresh_token_secret
+    JWT_ACCESS_EXPIRATION=15m
+    JWT_REFRESH_EXPIRATION=7d
+
+    # Database
+    DATABASE_URL=your_database_connection_string
+
+    # Redis Cache
+    REDIS_URL=redis://localhost:6379
+
+    # Elasticsearch
+    ELASTICSEARCH_URL=http://localhost:9200
+    ELASTICSEARCH_USERNAME=your_es_username
+    ELASTICSEARCH_PASSWORD=your_es_password
+
+    # AI Image Generation
+    OPENAI_API_KEY=your_openai_api_key
+    DALLE_MODEL=dall-e-3
+
+    # Google Cloud
+    GCP_PROJECT_ID=your_gcp_project_id
+    GCP_APP_ENGINE_SERVICE=default
+
+Start the backend services:
+
+    go run main.go
+
+Start the frontend:
+
+    cd frontend
+    npm start
+
+The application will be available at:
+
+    http://localhost:3000
